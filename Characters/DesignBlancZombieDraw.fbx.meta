@@ -1,0 +1,183 @@
+fileFormatVersion: 2
+guid: 4ee435ff588380b4a83c19c1e2e1acd1
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ArmL
+    100002: ArmL.001
+    100004: ArmR
+    100006: ArmR.001
+    100008: Body
+    100010: //RootNode
+    100012: Eye2R
+    100014: Eye3L
+    100016: EyeL
+    100018: EyeR
+    100020: FootL
+    100022: FootR
+    100024: Head
+    100026: LegR
+    100028: LegR.001
+    100030: Mouth
+    400000: ArmL
+    400002: ArmL.001
+    400004: ArmR
+    400006: ArmR.001
+    400008: Body
+    400010: //RootNode
+    400012: Eye2R
+    400014: Eye3L
+    400016: EyeL
+    400018: EyeR
+    400020: FootL
+    400022: FootR
+    400024: Head
+    400026: LegR
+    400028: LegR.001
+    400030: Mouth
+    2100000: Material
+    2100002: Material.001
+    2100004: Material.003
+    2100006: Material.004
+    2100008: Material.005
+    2100010: Material.007
+    2100012: Material.009
+    2100014: Material.012
+    2100016: Material.014
+    2100018: Material.015
+    2100020: Material.008
+    2100022: Material.010
+    2100024: Material.011
+    2100026: Material.002
+    2100028: Material.006
+    2300000: ArmL
+    2300002: ArmL.001
+    2300004: ArmR
+    2300006: ArmR.001
+    2300008: Body
+    2300010: Eye2R
+    2300012: Eye3L
+    2300014: EyeL
+    2300016: EyeR
+    2300018: FootL
+    2300020: FootR
+    2300022: Head
+    2300024: LegR
+    2300026: LegR.001
+    2300028: Mouth
+    3300000: ArmL
+    3300002: ArmL.001
+    3300004: ArmR
+    3300006: ArmR.001
+    3300008: Body
+    3300010: Eye2R
+    3300012: Eye3L
+    3300014: EyeL
+    3300016: EyeR
+    3300018: FootL
+    3300020: FootR
+    3300022: Head
+    3300024: LegR
+    3300026: LegR.001
+    3300028: Mouth
+    4300000: Head
+    4300002: Body
+    4300004: FootR
+    4300006: FootL
+    4300008: ArmR
+    4300010: LegR
+    4300012: LegR.001
+    4300014: ArmL
+    4300016: ArmR.001
+    4300018: ArmL.001
+    4300020: EyeR
+    4300022: EyeL
+    4300024: Mouth
+    4300026: Eye2R
+    4300028: Eye3L
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
