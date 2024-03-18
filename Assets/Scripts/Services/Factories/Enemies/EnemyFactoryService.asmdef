@@ -1,0 +1,17 @@
+{
+    "name": "EnemyFactoryService",
+    "rootNamespace": "",
+    "references": [
+        "GUID:d0c400e755783c0448f7cbef0a6a2ae3",
+        "GUID:d09c3da3357506f47a0314d9e82ac6e6"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

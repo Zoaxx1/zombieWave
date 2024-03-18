@@ -1,0 +1,16 @@
+{
+    "name": "EnemyMovemetn",
+    "rootNamespace": "",
+    "references": [
+        "GUID:b6d62d5ea86f45b47849094801e9d79e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

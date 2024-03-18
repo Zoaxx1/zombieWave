@@ -1,0 +1,16 @@
+{
+    "name": "IPlayer",
+    "rootNamespace": "",
+    "references": [
+        "GUID:b8815c1b1f96c3442bfd4a4eeacbf518"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
