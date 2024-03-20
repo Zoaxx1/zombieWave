@@ -1,25 +1,28 @@
 ﻿using Assets.Scripts.Interfaces.IPlayer;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Assets.Scripts.Player.Rotation
 {
     public class PlayerRotator : MonoBehaviour
     {
-        IPlayerInputRotator _playerRotation;
+        [SerializeField] PlayerInput playerInput;
 
-        public void Configure(PlayerInputs input)
+        private void Update()
         {
-            switch (input)
-            {
-                case PlayerInputs.Mobile: break;
-                case PlayerInputs.Joystick: break;
-                default:
-                    _playerRotation = new PlayerRotatorMouse();
-                    break;
-            }
+            Rotate();
         }
 
-        public void Rotate() =>
-            _playerRotation.Rotate(transform);
+        public void Rotate()
+        {
+            var position = playerInput.actions["Rotation"].ReadValue<Vector2>();
+
+            var mousePosition = Camera.main.ScreenToWorldPoint(position);
+
+            Debug.Log(mousePosition);
+
+            transform.LookAt(new Vector3(mousePosition.x, transform.position.y, mousePosition.y));
+            transform.Rotate(new Vector3(transform.rotation.x, transform.rotation.y + 90, transform.rotation.z));
+        }
     }
 }

@@ -11,8 +11,6 @@ namespace Assets.Scripts.Player
     {
         [SerializeField] PlayerController player;
         [SerializeField] PlayerLife playerLife;
-        [SerializeField] PlayerMover playerMovement;
-        [SerializeField] PlayerRotator playerRotation;
         [SerializeField] PlayerAttacker playerAttacker;
         [SerializeField] PlayerShooter playerShooter;
 
@@ -20,23 +18,11 @@ namespace Assets.Scripts.Player
         {
             player.Configure(this);
             playerLife.Configure(this);
-        }
-
-        public void UseInput(PlayerInputs input)
-        {
-            playerMovement.Configure(input);
-            playerRotation.Configure(input);
-            playerAttacker.Configure(this, input);
+            playerAttacker.Configure(this);
         }
 
         public void LifeZero() =>
             player.DestroyPlayer();
-
-        public void DoMove() =>
-            playerMovement.Move();
-
-        public void DoRotate() =>
-            playerRotation.Rotate();
 
         public void DoAttack() =>
             playerAttacker.Attack();

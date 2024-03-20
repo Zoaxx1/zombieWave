@@ -8,18 +8,11 @@ namespace Assets.Scripts.Player.Attack
         IPlayerMediator _mediator;
         IPlayerInputAttack _playerInputAttack;
 
-        public void Configure(IPlayerMediator mediator, PlayerInputs input)
+        public void Configure(IPlayerMediator mediator)
         {
             _mediator = mediator;
 
-            switch (input)
-            {
-                case PlayerInputs.Mobile: break;
-                case PlayerInputs.Joystick: break;
-                default:
-                    _playerInputAttack = new PlayerAttackMouse();
-                    break;
-            }
+            _playerInputAttack = new PlayerAttackMouse();
         }
 
         public void Attack()

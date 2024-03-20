@@ -1,28 +1,29 @@
 ﻿using Assets.Scripts.Interfaces.IPlayer;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Assets.Scripts.Player.Movement
 {
     public class PlayerMover : MonoBehaviour
     {
         [SerializeField] Rigidbody rb;
-        [SerializeField] float speed = 800;
+        [SerializeField] float speed = 400;
+        [SerializeField] PlayerInput playerInput;
+        Vector3 _input;
 
-        IPlayerInputMovement _playerInputMovement;
+        private void Update() =>
+            _input = GetInput();
 
-        public void Configure(PlayerInputs input)
+        private void FixedUpdate() =>
+            Move();
+
+        Vector3 GetInput()
         {
-            switch (input)
-            {
-                case PlayerInputs.Mobile: break;
-                case PlayerInputs.Joystick: break;
-                default: 
-                    _playerInputMovement = new PlayerInputKeyboard();
-                    break;
-            }
+            Vector2 input = playerInput.actions["Move"].ReadValue<Vector2>();
+            return new Vector3(input.x, 0, input.y);
         }
 
-        public void Move() =>
-            rb.velocity = _playerInputMovement.GetInput() * speed * Time.deltaTime;
+        void Move() =>
+            rb.velocity = _input * speed * Time.deltaTime;
     }
 }
