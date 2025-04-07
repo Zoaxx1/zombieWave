@@ -2,7 +2,9 @@
     "name": "Ammunition",
     "rootNamespace": "",
     "references": [
-        "GUID:d0c400e755783c0448f7cbef0a6a2ae3"
+        "GUID:d0c400e755783c0448f7cbef0a6a2ae3",
+        "GUID:b6d62d5ea86f45b47849094801e9d79e",
+        "GUID:fe7e02632ec06f0488fd39599434311f"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

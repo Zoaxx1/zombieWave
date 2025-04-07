@@ -3,6 +3,6 @@
     public enum AmmunitionIds
     {
         Bullet,
-        Granade
+        Grenade
     }
 }

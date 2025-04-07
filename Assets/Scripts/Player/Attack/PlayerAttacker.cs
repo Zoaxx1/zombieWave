@@ -6,21 +6,18 @@ namespace Assets.Scripts.Player.Attack
     public class PlayerAttacker : MonoBehaviour
     {
         IPlayerMediator _mediator;
-        IPlayerInputAttack _playerInputAttack;
 
         public void Configure(IPlayerMediator mediator)
         {
             _mediator = mediator;
-
-            _playerInputAttack = new PlayerAttackMouse();
         }
 
         public void Attack()
         {
-            if (_playerInputAttack.CanShootFireOne())
+            if (Input.GetMouseButtonDown(0))
                 _mediator.DoShootFireOne();
 
-            if(_playerInputAttack.CanShootFireTwo())
+            if(Input.GetMouseButtonDown(1))
                 _mediator.DoShootFireTwo();
         }
     }

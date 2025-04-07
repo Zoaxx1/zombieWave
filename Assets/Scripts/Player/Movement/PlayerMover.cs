@@ -8,7 +8,6 @@ namespace Assets.Scripts.Player.Movement
     {
         [SerializeField] Rigidbody rb;
         [SerializeField] float speed = 400;
-        [SerializeField] PlayerInput playerInput;
         Vector3 _input;
 
         private void Update() =>
@@ -19,8 +18,9 @@ namespace Assets.Scripts.Player.Movement
 
         Vector3 GetInput()
         {
-            Vector2 input = playerInput.actions["Move"].ReadValue<Vector2>();
-            return new Vector3(input.x, 0, input.y);
+            float inputX = Input.GetAxis("Horizontal");
+            float inputY = Input.GetAxis("Vertical");
+            return new Vector3(inputX, 0, inputY);
         }
 
         void Move() =>

@@ -1,4 +1,4 @@
-﻿using Assets.Scripts.Interfaces.IPlayer;
+using Assets.Scripts.Interfaces.IPlayer;
 using Assets.Scripts.Player.Attack;
 using Assets.Scripts.Player.Life;
 using Assets.Scripts.Player.Movement;

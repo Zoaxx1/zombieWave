@@ -23,8 +23,9 @@ namespace Assets.Scripts.Services
         public void Shoot(Transform spawnTransform, AmmunitionIds id)
         {
             var ammounition = _objectPools[id].Instantiate(spawnTransform.position, spawnTransform.rotation);
-
-            ammounition.GetComponent<Ammunition>().Configure(spawnTransform.right * -1);
+            
+            if(id == AmmunitionIds.Bullet) ammounition.GetComponent<Ammunition>().Configure(spawnTransform.right * -1);
+            else ammounition.GetComponent<Grenade>().Configure((spawnTransform.right * -1) / 2);
         }
     }
 }

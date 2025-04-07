@@ -1,4 +1,4 @@
-﻿using Assets.Scripts.ObjectPools;
+using Assets.Scripts.ObjectPools;
 using System.Collections;
 using UnityEngine;
 
@@ -6,14 +6,12 @@ namespace Assets.Scripts.Player.Attack
 {
     public class Ammunition : RecyclableObject
     {
-        [SerializeField] AmmunitionIds id;
+        public AmmunitionIds ID = AmmunitionIds.Bullet;
         [SerializeField] Rigidbody rb;
         [SerializeField] float speed;
         [SerializeField] float timeToDestroy;
 
         Vector3 _direction;
-
-        public AmmunitionIds ID => id;
 
         public void Configure(Vector3 direction)
         {
@@ -30,7 +28,6 @@ namespace Assets.Scripts.Player.Attack
 
         private void OnCollisionEnter(Collision collision)
         {
-            if (collision.gameObject.CompareTag("Floor")) return;
             Recycle();
         }
 

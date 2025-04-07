@@ -13,7 +13,9 @@ namespace Assets.Scripts.Enemies
         [SerializeField] EnemyMover enemyMover;
         [SerializeField] EnemyBooster enemyBooster;
         [SerializeField] EnemyObjectiveMarker enemyObjectiveMarker;
-
+        #if UNITY_EDITOR
+        [SerializeField] private Transform playerTarget;
+        #endif
         private void Awake()
         {
             enemy.Configure(this);
@@ -22,7 +24,9 @@ namespace Assets.Scripts.Enemies
 
         public void SetTarget(Transform player)
         {
-            enemyObjectiveMarker.Configure(this, player);
+            Transform target = player;
+            if (player is null) target = playerTarget;
+            enemyObjectiveMarker.Configure(this, playerTarget);
         }
 
         public void LifeZero() =>
